@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height:100%;
+    background-color: rgba(215, 36, 36, 0.846);
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+}
+.headings{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:30px;
+    border: 1px solid black;
+    box-shadow: 0 0 50px black;
+
+    input{
+        width:20vw;
+        height: 35px;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    button{
+        background-color: brown;
+        color:white;
+        padding:10px 20px;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    select{
+        width:150px;
+        height: 30px;
+    }
+
+}
+
+
+.headings button:hover{
+    scale:0.85;
+}
+#main-container{
+    /* width:; */
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(52, 208, 86);
+    
+
+    p{
+        width: 40vw;
+        padding:10px 20px;
+        margin:20vh auto;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .playersDetails{
+        display:flex;
+        gap:20px;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        font-size: 1.5rem;
+        margin: 20px;
+        padding:5px 20px;
+        border: 2px solid black;
+        /* border-radius: 30px; */
+        background-color: aliceblue;
+        font-weight: 700;
+
+        button{
+            padding:5px 15px;
+            background-color: brown;
+            color:white;
+            font-weight: 900;
+            transition: 0.5s ease;
+
+            
+        }
+        .del{
+            background-color: red;
+            
+        }
+    }
+}
+
+#main-container button:hover{
+    scale:0.85;
+}
+
+
+@media (max-width: 445px) {
+    h1 {
+        font-size: 2rem; /* Reduce font size */
+        margin: 10px; /* Adjust margin */
+    }
+
+    .headings {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .headings input {
+        width: 80vw; /* Increase width for small screens */
+        height: 25px;
+    }
+
+    #main-container {
+        padding: 10px;
+    }
+
+    .playersDetails {
+        flex-direction: column; /* Stack items vertically */
+        font-size: 1rem; /* Reduce font size */
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .playersDetails button {
+        flex-direction: row;
+        padding: 8px 10px;
+        width: auto; /* Make button full width */
+    }
+}
